@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Loader.scss";
-import { tr } from "framer-motion/client";
 
 function Loader({ callback }) {
     const [isVisible, setIsVisible] = useState(true);
@@ -8,10 +7,10 @@ function Loader({ callback }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
-            if (callback) callback(isVisible);
+            if (callback) callback(false);
         }, 2000);
         return () => clearTimeout(timer);
-    }, []);
+    }, [callback]);
 
     return isVisible ? (
         <div className="loader-overlay">
