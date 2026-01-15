@@ -5,6 +5,8 @@
 }
 
 .split {
+    position: relative;
+    z-index: 20;
     height: 5px;
     background-color: #cfcfcf;
     background: radial-gradient(ellipse at center, #ffffff 40%, transparent 70%);

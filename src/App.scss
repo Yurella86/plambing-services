@@ -19,109 +19,24 @@
         white-space: nowrap;
     }
 
-    &__header {
-        min-height: 75px;
-        display: flex;
-        flex-direction: row;
-        // flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        background: radial-gradient(ellipse at top, #023aa0 0%, #000f2b 70%);
-
-        @media (max-width: 1760px) {
-            // flex-direction: column;
-        }
-    }
-
-    &__header-left {
-        display: flex;
-        align-items: center;
-    }
-
-    &__header-logo {
-        height: 50px;
-        width: 50px;
-    }
-
-    &__header-title {
-        padding: 0 10px;
-        font-size: 26px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;
-        white-space: nowrap;
-        cursor: default;
-
-        span {
-            color: #51a4da;
-        }
-    }
-
-    &__header-right {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        @media (max-width: 1760px) {
-            // flex-direction: column;
-            // width: 100%;
-        }
-    }
-
-    &__header-nav {
-        display: flex;
-        font-size: 16px;
-        line-height: 1;
-        gap: 20px;
-    }
-
-    &__header-Link {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    &__link-direct {
-        display: inline-block;
-        margin-left: 5px;
-        vertical-align: middle;
-    }
-
-    &__emergency {
-        position: relative;
-        font-size: 16px;
-        height: 100%;
-    }
-
-    &__emergency-icon {
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        transform: translateY(-50%);
-        height: 40px;
-        width: 40px;
-        margin-right: 5px;
-        border-radius: 50%;
-        background: radial-gradient(ellipse at top left, #1661ee 0%, #00266d 80%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__emergency-info {
-        margin-left: 50px;
-        font-family: "Arial", sans-serif;
-    }
-
-    &__emergency-number {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
     &__services {
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
         background: radial-gradient(ellipse at top, #012260 10%, transparent 60%);
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: radial-gradient(ellipse at top, #012260 10%, transparent 60%);
+        //     pointer-events: none;
+        // }
     }
 
     &__footer {
