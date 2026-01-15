@@ -1,0 +1,32 @@
+.btn {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+    }
+
+    &__primary {
+        background: linear-gradient(to top, #07408d 0%, #2f9cdf 100%);
+    }
+
+    &__secondary {
+        background: linear-gradient(to top, #02122c 0%, #12264b 100%);
+    }
+
+    &__additional {
+        background: linear-gradient(to top, #e95912 0%, #f19411 100%);
+    }
+
+    &__min-width {
+        min-width: 250px;
+    }
+}
