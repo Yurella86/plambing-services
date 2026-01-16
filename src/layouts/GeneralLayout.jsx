@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../contexts/globalContext";
 import Loader from "../components/loader/Loader";
 import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 function GeneralLayout({ children }) {
     const { loading } = useGlobalContext();
@@ -16,7 +17,7 @@ function GeneralLayout({ children }) {
                     {children}
                     <div className="split"></div>
                 </main>
-                <footer className="app__footer">&copy; {new Date().getFullYear()} Plumbing Services created by Yuriy Turko</footer>
+                <Footer />
             </div>
         </div>
     );

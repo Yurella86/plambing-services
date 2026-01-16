@@ -163,8 +163,9 @@
         position: relative;
         text-decoration: none;
         transition: color 0.3s ease;
+        z-index: 1;
 
-        &::after {
+        &::before {
             content: "";
             position: absolute;
             bottom: -2px;
@@ -172,13 +173,14 @@
             transform: translate(-50%, -50%);
             width: 0;
             height: 2px;
-            background: linear-gradient(to right, #011f56, #eaf2fb, #011f56);
+            z-index: -1;
+            background: linear-gradient(to right, #011f56 0, #eaf2fb 40%, #eaf2fb 60%, #011f56 100%);
             // box-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
             transition: width 0.4s ease;
         }
 
         &:hover {
-            &::after {
+            &::before {
                 width: 100%;
             }
         }

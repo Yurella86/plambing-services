@@ -100,9 +100,19 @@
     &__separator {
         position: absolute;
         right: 0;
+        left: auto;
+        bottom: auto;
         height: 100%;
         width: 1px;
         background-color: #cfcfcf;
         background: radial-gradient(ellipse at center, #ffffff 20%, transparent 70%);
+
+        @media (max-width: 991px) {
+            height: 1px;
+            width: 90%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
     }
 }

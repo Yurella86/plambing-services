@@ -1,6 +1,6 @@
 import "./HomePage.scss";
-import Banner from "../../components/banner/Banner";
 import Services from "../../components/services/Services";
+import Banner from "../../components/banner/Banner.jsx";
 
 function HomePage() {
     return (
