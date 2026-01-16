@@ -1,4 +1,6 @@
-.mw1200 {
+.mw1200,
+.container {
+    padding: 0 20px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -10,4 +12,8 @@
     height: 5px;
     background-color: #cfcfcf;
     background: radial-gradient(ellipse at center, #ffffff 40%, transparent 70%);
+}
+
+.text-center {
+    text-align: center;
 }

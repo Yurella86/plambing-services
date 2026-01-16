@@ -1,7 +1,7 @@
 export const nav_links = [
     {
         name: "Home",
-        path: "/home",
+        path: "/",
     },
     {
         name: "About Us",
@@ -23,7 +23,7 @@ export const nav_links = [
 
 export const services = [
     {
-        name: "Emergency repairs",
+        name: "contact repairs",
         path: "repairs",
     },
     {
