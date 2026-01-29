@@ -3,12 +3,20 @@ import logo from "../../assets/images/plumbing-logo.png";
 import { nav_links } from "../../constants/objects.js";
 import "./Header.scss";
 import "../../style/global.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../style/global.scss";
 import { Link } from "react-router";
 
 function Header() {
     const [navOpened, setNavOpened] = useState(false);
+
+    useEffect(() => {
+        if (navOpened) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [navOpened]);
 
     return (
         <header className="header mw1200">
